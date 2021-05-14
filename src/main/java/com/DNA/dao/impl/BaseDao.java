@@ -39,7 +39,7 @@ public abstract class BaseDao {
 
     /**
     * @Description 查询返回一条javaBean的SQL语句
-    * @Return [type, sql, args]
+    * @Return 查询失败返回null
     * @Author 脱氧核糖
     * @Date 2021/5/9 22:49
     */
@@ -57,7 +57,7 @@ public abstract class BaseDao {
 
     /**
     * @Description 查询返回多条javaBean的SQL语句
-    * @Return [type, sql, args]
+    * @Return 查询失败返回null
     * @Author 脱氧核糖
     * @Date 2021/5/9 22:53
     */

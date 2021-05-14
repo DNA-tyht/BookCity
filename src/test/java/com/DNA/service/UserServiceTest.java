@@ -1,10 +1,8 @@
 package com.DNA.service;
 
-import com.DNA.pojo.User;
+import com.DNA.bean.User;
 import com.DNA.service.impl.UserServiceImpl;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @Description

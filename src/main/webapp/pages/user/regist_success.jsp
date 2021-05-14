@@ -20,7 +20,7 @@
 		<div id="header">
 				<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
 				<span class="wel_word"></span>
-				<%@ include file="/pages/common/login_sucess_menu.jsp"%>
+				<%@ include file="/static/common/login_sucess_menu.jsp"%>
 		</div>
 		
 		<div id="main">

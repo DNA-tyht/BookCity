@@ -1,4 +1,4 @@
-package com.DNA.pojo;
+package com.DNA.bean;
 
 /**
  * @Description

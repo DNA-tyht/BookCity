@@ -1,7 +1,7 @@
 package com.DNA.dao.impl;
 
 import com.DNA.dao.UserDao;
-import com.DNA.pojo.User;
+import com.DNA.bean.User;
 
 /**
  * @Description

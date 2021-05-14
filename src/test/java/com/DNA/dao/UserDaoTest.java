@@ -1,7 +1,7 @@
 package com.DNA.dao;
 
 import com.DNA.dao.impl.UserDaoImpl;
-import com.DNA.pojo.User;
+import com.DNA.bean.User;
 import org.junit.Test;
 
 /**

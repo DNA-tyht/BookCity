@@ -2,7 +2,7 @@ package com.DNA.service.impl;
 
 import com.DNA.dao.UserDao;
 import com.DNA.dao.impl.UserDaoImpl;
-import com.DNA.pojo.User;
+import com.DNA.bean.User;
 import com.DNA.service.UserService;
 
 /**

@@ -1,6 +1,6 @@
 package com.DNA.service;
 
-import com.DNA.pojo.User;
+import com.DNA.bean.User;
 
 /**
  * @Description
@@ -11,7 +11,7 @@ import com.DNA.pojo.User;
 public interface UserService {
     /**
     * @Description 注册用户
-    * @Return [user]
+    * @Return 注册失败返回-1，注册成功返回1
     * @Author 脱氧核糖
     * @Date 2021/5/10 9:00
     */
@@ -19,7 +19,7 @@ public interface UserService {
 
     /**
     * @Description 登录
-    * @Return [user]
+    * @Return 登录失败返回null，登录成功返回user
     * @Author 脱氧核糖
     * @Date 2021/5/10 9:00
     */
@@ -27,7 +27,7 @@ public interface UserService {
 
     /**
     * @Description 检查用户名是否可用
-    * @Return [username]
+    * @Return 用户名可用为正，不可用为假
     * @Author 脱氧核糖
     * @Date 2021/5/10 9:01
     */
