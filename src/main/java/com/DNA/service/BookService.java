@@ -13,21 +13,21 @@ import java.util.List;
 public interface BookService {
     /**
     * @Description 添加一条图书记录
-    * @Return 添加失败返回-1，添加成功返回1
+    * @Return
     * @Author 脱氧核糖
     * @Date 2021/5/14 22:18
     */
     public void addBook(Book book);
     /**
     * @Description 删除一条图书记录
-    * @Return 删除失败返回-1，删除成功返回1
+    * @Return
     * @Author 脱氧核糖
     * @Date 2021/5/14 22:19
     */
     public void deleteBookById(int id);
     /**
     * @Description 更新一条图书记录
-    * @Return 更新失败返回-1，更新成功返回1
+    * @Return
     * @Author 脱氧核糖
     * @Date 2021/5/14 22:20
     */

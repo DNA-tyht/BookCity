@@ -15,9 +15,9 @@
 <body>
 	
 	<div id="header">
-			<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
+			<img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
 			<span class="wel_word">后台管理系统</span>
-		<%@include file="/static/common/maager_menu.jsp"%>
+		<%@include file="/static/common/manager_menu.jsp"%>
 	</div>
 	
 	<div id="main">

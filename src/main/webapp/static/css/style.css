@@ -14,7 +14,6 @@ div{
 	margin: auto;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	
 }
 
 #header {
@@ -39,7 +38,7 @@ div{
 	width: 100%;
 	height: 90%;
 	margin: auto;
-	
+
 }
 
 .b_list{
@@ -56,7 +55,7 @@ div{
 	width: 100%;
 	height: 10px;
 	margin: auto;
-	
+
 	text-align: center;
 }
 
@@ -72,11 +71,10 @@ div{
 
 .book_img {
 	height:150px;
-	width:150px;
+	width:200px;
 }
 
 .book_info {
-	
 	text-align: center;
 }
 
@@ -162,7 +160,7 @@ h1 {
 }
 
 .msg_cont b {
-	background: url("../img/pwd-icons-new.png") no-repeat scroll -104px -22px rgba(0, 0, 0, 0);
+	background: url("../images/pwd-icons-new.png") no-repeat scroll -104px -22px rgba(0, 0, 0, 0);
     display: block;
     height: 17px;
     left: 10px;
@@ -231,7 +229,7 @@ h1 {
 /*购物车*/
 #main table{
 	margin: auto;
-	margin-top: 80px; 
+	margin-top: 80px;
 	border-collapse: collapse;
 }
 

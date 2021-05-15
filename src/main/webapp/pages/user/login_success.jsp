@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>会员注册页面</title>
+<title>登录成功页面</title>
 	<%@include file="/static/common/head.jsp"%>
 	<style type="text/css">
 		h1 {
@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div id="header">
-			<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
+			<img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
 			<%@ include file="/static/common/login_sucess_menu.jsp"%>
 	</div>
 

@@ -1,4 +1,4 @@
-<%@page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,37 +21,35 @@
 	</style>
 </head>
 <body>
-		<div id="header">
-			<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
-			<span class="wel_word">编辑图书</span>
-			<%@ include file="/static/common/login_sucess_menu.jsp"%>
-		</div>
-		
-		<div id="main">
-			<form action="pages/manager/book_manager.jsp">
-				<table>
-					<tr>
-						<td>名称</td>
-						<td>价格</td>
-						<td>作者</td>
-						<td>销量</td>
-						<td>库存</td>
-						<td colspan="2">操作</td>
-					</tr>		
-					<tr>
-						<td><input name="book_name" type="text" value="时间简史"/></td>
-						<td><input name="book_price" type="text" value="30.00"/></td>
-						<td><input name="book_author" type="text" value="霍金"/></td>
-						<td><input name="book_sales" type="text" value="200"/></td>
-						<td><input name="book_stock" type="text" value="300"/></td>
-						<td><input type="submit" value="提交"/></td>
-					</tr>	
-				</table>
-			</form>
-			
-	
-		</div>
-
-		<%@include file="/static/common/footer.jsp"%>
+	<div id="header">
+		<img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
+		<span class="wel_word">编辑图书</span>
+		<%@ include file="/static/common/login_sucess_menu.jsp"%>
+	</div>
+	<div id="main">
+		<form action="manager/bookServlet" method="get" accept-charset="UTF-8">
+			<input type="hidden" name="action" value="${empty param.id ? "add" : "update"}" />
+			<input type="hidden" name="id" value="${requestScope.book.id}" />
+			<table>
+				<tr>
+					<td>名称</td>
+					<td>价格</td>
+					<td>作者</td>
+					<td>销量</td>
+					<td>库存</td>
+					<td colspan="2">操作</td>
+				</tr>
+				<tr>
+					<td><input name="name" type="text" value="${requestScope.book.name}"/></td>
+					<td><input name="price" type="text" value="${requestScope.book.price}"/></td>
+					<td><input name="author" type="text" value="${requestScope.book.author}"/></td>
+					<td><input name="sales" type="text" value="${requestScope.book.sales}"/></td>
+					<td><input name="stock" type="text" value="${requestScope.book.stock}"/></td>
+					<td><input type="submit" value="提交"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<%@include file="/static/common/footer.jsp"%>
 </body>
 </html>

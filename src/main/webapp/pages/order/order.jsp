@@ -15,7 +15,7 @@
 <body>
 	
 	<div id="header">
-			<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
+			<img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
 			<span class="wel_word">我的订单</span>
 			<%@ include file="/static/common/login_sucess_menu.jsp"%>
 	</div>

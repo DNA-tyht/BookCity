@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="login_header">
-		<img class="logo_img" alt="" src="static/img/DNAlogo.png" height="82px">
+		<img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
 	</div>
 
 	<div class="login_banner">

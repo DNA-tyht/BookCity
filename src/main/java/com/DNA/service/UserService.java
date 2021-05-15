@@ -11,7 +11,7 @@ import com.DNA.bean.User;
 public interface UserService {
     /**
     * @Description 注册用户
-    * @Return 注册失败返回-1，注册成功返回1
+    * @Return
     * @Author 脱氧核糖
     * @Date 2021/5/10 9:00
     */

@@ -15,12 +15,12 @@ public class Book {
     private BigDecimal price;
     private Integer sales;
     private Integer stock;
-    private String imgPath = "/static/img/default.jpg";
+    private String imgPath = "static/img/default.jpg";
 
     public Book() {
     }
 
-    public Book(Integer id, String name, String author, BigDecimal price, Integer sales, Integer stock, String imfPath) {
+    public Book(Integer id, String name, String author, BigDecimal price, Integer sales, Integer stock, String imgPath) {
         this.id = id;
         this.name = name;
         this.author = author;
@@ -28,7 +28,7 @@ public class Book {
         this.sales = sales;
         this.stock = stock;
         if (imgPath != null && "".equals(imgPath))
-            this.imgPath = imfPath;
+            this.imgPath = imgPath;
     }
 
     public Integer getId() {
@@ -97,7 +97,7 @@ public class Book {
                 ", price=" + price +
                 ", sales=" + sales +
                 ", stock=" + stock +
-                ", imfPath='" + imgPath + '\'' +
+                ", imgPath='" + imgPath + '\'' +
                 '}';
     }
 }

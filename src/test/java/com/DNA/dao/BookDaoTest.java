@@ -29,7 +29,7 @@ public class BookDaoTest {
 
     @Test
     public void updateBook() {
-        bookDao.updateBook(new Book(14, "CSS从绘制框架到改行画画", "脱氧核糖", new BigDecimal(50), 80, 100, null));
+        bookDao.updateBook(new Book(13, "CSS从绘制框架到改行画画", "脱氧核糖", new BigDecimal(50), 67, 100, null));
     }
 
     @Test
