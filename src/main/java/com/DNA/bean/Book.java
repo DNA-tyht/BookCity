@@ -3,7 +3,7 @@ package com.DNA.bean;
 import java.math.BigDecimal;
 
 /**
- * @Description
+ * @Description 图书
  * @Author 脱氧核糖
  * @Version 1.0
  * @Date 2021/5/14 21:30
@@ -15,7 +15,7 @@ public class Book {
     private BigDecimal price;
     private Integer sales;
     private Integer stock;
-    private String imgPath = "static/img/default.jpg";
+    private String imgPath = "static/images/default.jpg";
 
     public Book() {
     }

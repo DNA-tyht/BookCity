@@ -19,7 +19,7 @@ public class BookServiceTest {
 
     @Test
     public void addBook() {
-        bookService.addBook(new Book(14, "Java从入门到入土", "脱氧核糖", new BigDecimal(99), 100, 1, null));
+        bookService.addBook(new Book(1, "C语言从研发到脱发", "脱氧核糖", new BigDecimal(99), 100, 1, null));
     }
 
     @Test

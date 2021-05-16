@@ -50,4 +50,36 @@ public interface BookDao {
     * @Date 2021/5/14 21:45
     */
     public List<Book> queryBook();
+
+    /**
+    * @Description 获取图书总数
+    * @Return []
+    * @Author 脱氧核糖
+    * @Date 2021/5/15 16:19
+    */
+    Integer queryForPageTotalCount();
+
+    /**
+    * @Description 获取当前页数据
+    * @Return [begin, pageSize]
+    * @Author 脱氧核糖
+    * @Date 2021/5/15 16:24
+    */
+    List<Book> queryForPageItems(int begin, int pageSize);
+
+    /**
+    * @Description 根据价格区间获取当前页数据数量
+    * @Return []
+    * @Author 脱氧核糖
+    * @Date 2021/5/16 14:01
+    */
+    Integer queryForPageTotalCountByPrice(int min, int max);
+
+    /**
+    * @Description 根据价格区间获取当前页数据
+    * @Return [begin, pageSize, min, max]
+    * @Author 脱氧核糖
+    * @Date 2021/5/16 14:03
+    */
+    List<Book> queryForPageItemsByPrice(int begin, int pageSize, int min, int max);
 }

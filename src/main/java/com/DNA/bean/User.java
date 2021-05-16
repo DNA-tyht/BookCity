@@ -1,7 +1,7 @@
 package com.DNA.bean;
 
 /**
- * @Description
+ * @Description 用户
  * @Author 脱氧核糖
  * @Version 1.0
  * @Date 2021/5/9 21:50

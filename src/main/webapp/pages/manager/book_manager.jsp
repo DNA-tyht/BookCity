@@ -1,5 +1,5 @@
 <%@page contentType="text/html;charset=UTF-8" language="java" %>
-<%--加入该标签手动开启el功能--%>
+<%--加入该标签手动开启EL功能--%>
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -38,15 +38,15 @@
             <td colspan="2">操作</td>
         </tr>
 
-        <c:forEach items="${requestScope.books}" var="book">
+        <c:forEach items="${requestScope.page.items}" var="book">
             <tr>
                 <td>${book.name}</td>
                 <td>${book.price}</td>
                 <td>${book.author}</td>
                 <td>${book.sales}</td>
                 <td>${book.stock}</td>
-                <td><a href="manager/bookServlet?action=getBook&id=${book.id}">修改</a></td>
-                <td><a class="delete" href="manager/bookServlet?action=delete&id=${book.id}">删除</a></td>
+                <td><a href="manager/bookServlet?action=getBook&id=${book.id}&pageNo=${requestScope.page.pageNo}">修改</a></td>
+                <td><a class="delete" href="manager/bookServlet?action=delete&id=${book.id}&pageNo=${requestScope.page.pageNo}">删除</a></td>
             </tr>
         </c:forEach>
 
@@ -57,9 +57,10 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><a href="pages/manager/book_edit.jsp">添加图书</a></td>
+            <td><a href="pages/manager/book_edit.jsp?pageNo=${requestScope.page.pageTotal}">添加图书</a></td>
         </tr>
     </table>
+    <%@include file="/static/common/page_nav.jsp"%>
 </div>
 
 <%@include file="/static/common/footer.jsp"%>

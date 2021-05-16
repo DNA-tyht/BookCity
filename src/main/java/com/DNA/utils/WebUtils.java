@@ -23,4 +23,8 @@ public class WebUtils {
         }
         return bean;
     }
+
+    public static int parseInt(String strInt, int defaultValue) {
+        return (strInt != "" && strInt != null) ? Integer.parseInt(strInt) : defaultValue;
+    }
 }

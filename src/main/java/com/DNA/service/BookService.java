@@ -1,6 +1,7 @@
 package com.DNA.service;
 
 import com.DNA.bean.Book;
+import com.DNA.bean.Page;
 
 import java.util.List;
 
@@ -46,4 +47,20 @@ public interface BookService {
     * @Date 2021/5/14 22:22
     */
     public List<Book> queryBooks();
+
+    /**
+    * @Description 创建分页对象
+    * @Return [pageNo, pageSize]
+    * @Author 脱氧核糖
+    * @Date 2021/5/15 16:15
+    */
+    Page<Book> page(int pageNo, int pageSize);
+
+    /**
+    * @Description 根据价格区间创建分页对象
+    * @Return [pageNo, pageSize, min, max]
+    * @Author 脱氧核糖
+    * @Date 2021/5/16 13:59
+    */
+    Page<Book> pageByPrice(int pageNo, int pageSize, int min, int max);
 }

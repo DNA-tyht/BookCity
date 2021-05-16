@@ -30,6 +30,7 @@
 		<form action="manager/bookServlet" method="get" accept-charset="UTF-8">
 			<input type="hidden" name="action" value="${empty param.id ? "add" : "update"}" />
 			<input type="hidden" name="id" value="${requestScope.book.id}" />
+			<input type="hidden" name="pageNo" value="${param.pageNo}" />
 			<table>
 				<tr>
 					<td>名称</td>
