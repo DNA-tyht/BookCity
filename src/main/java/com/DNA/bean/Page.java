@@ -3,7 +3,7 @@ package com.DNA.bean;
 import java.util.List;
 
 /**
- * @Description 分页
+ * @Description 分页对象
  * @Author 脱氧核糖
  * @Version 1.0
  * @Date 2021/5/15 15:57

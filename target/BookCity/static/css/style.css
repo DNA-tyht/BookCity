@@ -3,11 +3,17 @@
 body {
 	overflow: hidden;
 }
-
 * {
 	margin: 0;
 	font-family:"Microsoft Yahei";
 	color: #666;
+}
+a {
+	text-decoration:none
+}
+
+a:hover {
+	text-decoration:none
 }
 
 div{
@@ -56,7 +62,6 @@ div{
 	width: 100%;
 	height: 30px;
 	margin: auto;
-
 	text-align: center;
 }
 
@@ -213,7 +218,7 @@ h1 {
 	float: right;
 	margin-left: 10px;
 	margin-top: 10px;
-	color: red;
+	color: rgba(229, 62, 62, 0.92);
 	text-decoration: none;
 }
 
@@ -221,7 +226,7 @@ h1 {
 	float: right;
 	margin-left: 10px;
 	margin-top: 10px;
-	color: red;
+	color: #10dbbd;
 }
 
 .tit {
@@ -251,14 +256,14 @@ h1 {
 }
 
 .cart_span span{
-	color: red;
+	color: rgba(229, 62, 62, 0.92);
 	font-size: 20px;
 	margin: 10px;
 }
 
 .cart_span a , td a{
 	font-size: 20px;
-	color: blue;
+	color: #1b5f9b;
 }
 
 #header div span {
@@ -266,11 +271,11 @@ h1 {
 }
 
 #header div .um_span{
-	color: #418ae1;
+	color: #1b5f9b;
 	font-size: 25px;
 	margin: 10px;
 }
 
 #header div a {
-	color: blue;
+	color: #1b5f9b;
 }

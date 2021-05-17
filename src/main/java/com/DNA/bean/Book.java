@@ -3,7 +3,7 @@ package com.DNA.bean;
 import java.math.BigDecimal;
 
 /**
- * @Description 图书
+ * @Description 图书对象
  * @Author 脱氧核糖
  * @Version 1.0
  * @Date 2021/5/14 21:30

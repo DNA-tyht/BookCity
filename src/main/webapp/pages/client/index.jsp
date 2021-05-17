@@ -11,18 +11,31 @@
     <meta charset="UTF-8">
     <title>书城首页</title>
     <%@include file="/static/common/head.jsp" %>
+    <script type="text/javascript">
+        $(function () {
+            $("button.addToCart").click(function () {
+                var bookId = $(this).attr("bookId");
+                location.href = "http://localhost:8080/BookCity/cartServlet?action=addItem&id=" + bookId;
+            });
+        });
+    </script>
 </head>
 <body>
 
 <div id="header">
     <img class="logo_img" alt="" src="static/images/DNAlogo.png" height="82px">
     <span class="wel_word">网上书城</span>
-    <div>
-        <a href="pages/user/login.jsp">登录</a> |
-        <a href="pages/user/regist.jsp">注册</a> &nbsp;&nbsp;
-        <a href="pages/cart/cart.jsp">购物车</a>
-        <a href="pages/manager/manager.jsp">后台管理</a>
-    </div>
+    <c:if test="${empty sessionScope.user}">
+        <div>
+            <a href="pages/user/login.jsp">登录</a> |
+            <a href="pages/user/regist.jsp">注册</a> &nbsp;&nbsp;
+            <a href="pages/cart/cart.jsp">购物车</a>
+            <a href="pages/manager/manager.jsp">后台管理</a>
+        </div>
+    </c:if>
+    <c:if test="${not empty sessionScope.user}">
+        <%@include file="/static/common/login_sucess_menu.jsp"%>
+    </c:if>
 </div>
 <div id="main">
     <div id="book">
@@ -35,9 +48,14 @@
             </form>
         </div>
         <div style="text-align: center">
-            <span>您的购物车中有3件商品</span>
+            <span>您的购物车中有${sessionScope.cart.totalCount}件商品</span>
             <div>
-                您刚刚将<span style="color: #10dbbd">时间简史</span>加入到了购物车中
+                <c:if test="${not empty sessionScope.cart.items}">
+                    您刚刚将<span style="color: #10dbbd">${sessionScope.lastName}</span>加入到了购物车中
+                </c:if>
+                <c:if test="${empty sessionScope.cart.items}">
+                    亲，当前购物车为空！
+                </c:if>
             </div>
         </div>
 
@@ -68,7 +86,7 @@
                         <span class="sp2">${book.stock}</span>
                     </div>
                     <div class="book_add">
-                        <button>加入购物车</button>
+                        <button bookId="${book.id}" class="addToCart">加入购物车</button>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 /**
- * @Description
+ * @Description 后台图书管理Servlet
  * @Author 脱氧核糖
  * @Version 1.0
  * @Date 2021/5/14 22:38
@@ -19,6 +19,12 @@ import java.io.IOException;
 public class BookServlet extends BaseServlet{
     private BookService bookService = new BookServiceImpl();
 
+    /**
+    * @Description 增加图书
+    * @Return [request, response]
+    * @Author 脱氧核糖
+    * @Date 2021/5/17 15:55
+    */
     protected void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int pageNo = WebUtils.parseInt(request.getParameter("pageNo"), 1);
         Book book = WebUtils.copyParamToBean(request.getParameterMap(), new Book());
@@ -31,6 +37,12 @@ public class BookServlet extends BaseServlet{
         //request.getRequestDispatcher("/manager/bookServlet?action=page").forward(request, response);
     }
 
+    /**
+    * @Description 删除图书
+    * @Return [request, response]
+    * @Author 脱氧核糖
+    * @Date 2021/5/17 15:55
+    */
     protected void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int pageNo = WebUtils.parseInt(request.getParameter("pageNo"), 1);
         String id = request.getParameter("id");
@@ -39,6 +51,12 @@ public class BookServlet extends BaseServlet{
         response.sendRedirect(request.getContextPath() + "/manager/bookServlet?action=page&pageNo=" + pageNo);
     }
 
+    /**
+    * @Description 修改图书
+    * @Return [request, response]
+    * @Author 脱氧核糖
+    * @Date 2021/5/17 15:55
+    */
     protected void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int pageNo = WebUtils.parseInt(request.getParameter("pageNo"), 1);
         Book book = WebUtils.copyParamToBean(request.getParameterMap(), new Book());

@@ -7,6 +7,12 @@
 	<%@include file="/static/common/head.jsp"%>
 	<script type="text/javascript">
 		$(function () {
+			//验证码刷新
+			$("#code_img").click(function () {
+				//src：验证码img属性的的图片路径
+				this.src = "${basePath}kaptcha.jpg?time=" + new Date();
+			});
+
 			//注册
 			$("#sub_btn").click(function () {
 				//获取输入框内容
@@ -105,8 +111,8 @@
 								<br />
 								<br />
 								<label>验证码：</label>
-								<input class="itxt" type="text" style="width: 150px;" name = "code" id="code"/>
-								<img alt="" src="static/img/code.bmp" style="float: right; margin-right: 40px">
+								<input class="itxt" type="text" style="width: 100px;" name = "code" id="code"/>
+								<img id="code_img" alt="" src="kaptcha.jpg" style="float: right; margin-right: 50px" width="110px" height="40px">
 								<br />
 								<br />
 								<input type="submit" value="注册" id="sub_btn" />

@@ -11,10 +11,7 @@
     <script type="text/javascript">
         $(function () {
             $("a.delete").click(function () {
-                if (confirm("确定删除《" + $(this).parent().parent().find("td:first").text() + "》?"))
-                    return true;
-                else
-                    return false;
+                return confirm("确定删除《" + $(this).parent().parent().find("td:first").text() + "》？");
             });
         });
     </script>
