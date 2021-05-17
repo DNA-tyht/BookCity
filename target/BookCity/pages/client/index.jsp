@@ -31,6 +31,7 @@
             <a href="pages/user/regist.jsp">注册</a> &nbsp;&nbsp;
             <a href="pages/cart/cart.jsp">购物车</a>
             <a href="pages/manager/manager.jsp">后台管理</a>
+            <a href="index.jsp">首页</a>
         </div>
     </c:if>
     <c:if test="${not empty sessionScope.user}">

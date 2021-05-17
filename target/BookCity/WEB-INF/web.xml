@@ -42,6 +42,15 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.DNA.servlet.OrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/orderServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>KaptchaServlet</servlet-name>
     <servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
   </servlet>
